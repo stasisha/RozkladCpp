@@ -1,0 +1,18 @@
+//---------------------------------------------------------------------------
+
+#ifndef PredmetsH
+#define PredmetsH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+//---------------------------------------------------------------------------
+class TDataModule2 : public TDataModule
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TDataModule2(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TDataModule2 *DataModule2;
+//---------------------------------------------------------------------------
+#endif

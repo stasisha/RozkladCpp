@@ -1,0 +1,18 @@
+//---------------------------------------------------------------------------
+
+#ifndef GroupH
+#define GroupH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+//---------------------------------------------------------------------------
+class TDataModule4 : public TDataModule
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TDataModule4(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TDataModule4 *DataModule4;
+//---------------------------------------------------------------------------
+#endif
