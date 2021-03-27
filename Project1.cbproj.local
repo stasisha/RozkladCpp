@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021/03/27 15:36:42.873,=D:\Users\stasb\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/03/27 15:36:43.373,=D:\Users\stasb\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/03/27 15:37:12.484,D:\Users\stasb\Documents\Embarcadero\Studio\Projects\Rozklad\Unit1.cpp=D:\Users\stasb\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/03/27 15:37:12.484,D:\Users\stasb\Documents\Embarcadero\Studio\Projects\Rozklad\Unit1.dfm=D:\Users\stasb\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/03/27 15:37:12.484,D:\Users\stasb\Documents\Embarcadero\Studio\Projects\Rozklad\Unit1.h=D:\Users\stasb\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2021/03/27 15:41:12.483,D:\Users\stasb\Documents\Embarcadero\Studio\Projects\Rozklad\Project1PCH1.h=D:\Users\stasb\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/03/27 15:41:17.546,D:\Users\stasb\Documents\Embarcadero\Studio\Projects\Rozklad\Project1.cbproj=D:\Users\stasb\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

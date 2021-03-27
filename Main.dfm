@@ -1,0 +1,63 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = #1056#1086#1079#1082#1083#1072#1076' '#1079#1072#1085#1103#1090#1100
+  ClientHeight = 201
+  ClientWidth = 447
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MainMenu1: TMainMenu
+    Left = 96
+    Top = 120
+    object N1: TMenuItem
+      Caption = #1044#1072#1085#1085#1110
+      object N6: TMenuItem
+        Caption = #1043#1088#1091#1087#1080
+      end
+      object N7: TMenuItem
+        Caption = #1044#1080#1089#1094#1080#1087#1083#1110#1085#1080
+      end
+      object N8: TMenuItem
+        Caption = #1040#1091#1076#1080#1090#1086#1088#1110#1111
+      end
+      object N9: TMenuItem
+        Caption = #1042#1080#1082#1083#1072#1076#1072#1095#1110
+      end
+    end
+    object N2: TMenuItem
+      Caption = #1044#1086#1074#1110#1076#1085#1080#1082#1080
+      object N10: TMenuItem
+        Caption = #1059#1095#1073#1086#1074#1110' '#1076#1085#1110
+      end
+      object N11: TMenuItem
+        Caption = #1063#1072#1089#1086#1074#1080#1081' '#1088#1086#1079#1082#1083#1072#1076
+      end
+    end
+    object N3: TMenuItem
+      Caption = #1056#1086#1079#1082#1083#1072#1076
+      object N12: TMenuItem
+        Caption = #1055#1077#1088#1077#1075#1083#1103#1085#1091#1090#1080
+      end
+      object N13: TMenuItem
+        Caption = #1044#1088#1091#1082#1091#1074#1072#1090#1080
+      end
+      object N14: TMenuItem
+        Caption = #1055#1086#1096#1091#1082
+      end
+    end
+    object N4: TMenuItem
+      Caption = #1044#1086#1087#1086#1084#1086#1075#1072
+    end
+    object N5: TMenuItem
+      Caption = #1042#1080#1093#1110#1076
+    end
+  end
+end
