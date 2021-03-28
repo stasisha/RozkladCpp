@@ -1,0 +1,34 @@
+//---------------------------------------------------------------------------
+
+#ifndef CreateRozkladH
+#define CreateRozkladH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TCreateRozkladForm : public TForm
+{
+__published:	// IDE-managed Components
+	TComboBox *ComboBox1;
+	TComboBox *ComboBox2;
+	TComboBox *ComboBox3;
+	TComboBox *ComboBox4;
+	TComboBox *ComboBox5;
+	TComboBox *ComboBox6;
+	TLabel *Label1;
+	TLabel *Label2;
+	TLabel *Label3;
+	TLabel *Label4;
+	TLabel *Label5;
+	TLabel *Label6;
+	TButton *Button1;
+	TButton *Button2;
+private:	// User declaraclarations
+	__fastcall TCreateRozkladForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TCreateRozkladForm *CreateRozkladForm;
+//---------------------------------------------------------------------------
+#endif

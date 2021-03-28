@@ -7,7 +7,7 @@
 #include "Group.h"
 #include "Predmets.h"
 #include "Rozklad.h"
-#include "Teacher.h"
+//#include "Teacher.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -33,13 +33,13 @@ void __fastcall TMainForm::N7Click(TObject *Sender)
 
 void __fastcall TMainForm::N12Click(TObject *Sender)
 {
-				RozkladForm->ShowModal();
+//				RozkladForm->ShowModal();
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TMainForm::N9Click(TObject *Sender)
 {
-				TeacherForm->ShowModal();
+//				TeacherForm->ShowModal();
 }
 //---------------------------------------------------------------------------
 

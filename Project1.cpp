@@ -4,15 +4,14 @@
 #pragma hdrstop
 #include <tchar.h>
 //---------------------------------------------------------------------------
-USEFORM("MainDataModule.cpp", DataModule9); /* TDataModule: File Type */
-USEFORM("Rozklad.cpp", Form2);
-USEFORM("Teacher.cpp", DataModule6); /* TDataModule: File Type */
-USEFORM("Audit.cpp", DataModule5); /* TDataModule: File Type */
-USEFORM("CreateRozklad.cpp", DataModule3); /* TDataModule: File Type */
-USEFORM("Day.cpp", DataModule7); /* TDataModule: File Type */
+//USEFORM("Predmets.cpp", PredmetsForm);
+//USEFORM("Rozklad.cpp", Form2);
+//USEFORM("MainDataModule.cpp", DataModule9); /* TDataModule: File Type */
+//USEFORM("Audit.cpp", DataModule5); /* TDataModule: File Type */
+//USEFORM("CreateRozklad.cpp", DataModule3); /* TDataModule: File Type */
+//USEFORM("Day.cpp", DataModule7); /* TDataModule: File Type */
 USEFORM("Group.cpp", GroupForm);
 USEFORM("Main.cpp", MainForm);
-USEFORM("Predmets.cpp", PredmetsForm);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -21,14 +20,13 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 		Application->Initialize();
 		Application->MainFormOnTaskBar = true;
 		Application->CreateForm(__classid(TMainForm), &MainForm);
-		Application->CreateForm(__classid(TDataModule3), &DataModule3);
-		Application->CreateForm(__classid(TDataModule5), &DataModule5);
-		Application->CreateForm(__classid(TDataModule6), &DataModule6);
-		Application->CreateForm(__classid(TDataModule7), &DataModule7);
-		Application->CreateForm(__classid(TDataModule9), &DataModule9);
-		Application->CreateForm(__classid(TForm2), &Form2);
+//		Application->CreateForm(__classid(TDataModule3), &DataModule3);
+//		Application->CreateForm(__classid(TDataModule5), &DataModule5);
+//		Application->CreateForm(__classid(TDataModule7), &DataModule7);
+//		Application->CreateForm(__classid(TDataModule9), &DataModule9);
+//		Application->CreateForm(__classid(TForm2), &Form2);
 		Application->CreateForm(__classid(TGroupForm), &GroupForm);
-		Application->CreateForm(__classid(TPredmetsForm), &PredmetsForm);
+//		Application->CreateForm(__classid(TPredmetsForm), &PredmetsForm);
 		Application->Run();
 	}
 	catch (Exception &exception)
