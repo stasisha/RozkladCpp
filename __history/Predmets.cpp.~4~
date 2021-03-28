@@ -1,0 +1,108 @@
+﻿#include <vcl.h>
+#pragma hdrstop
+
+#include "Predmets.h"
+#include "MainDataModule.h"
+#pragma package(smart_init)
+#pragma link "DBGridEh"
+#pragma link "GridsEh"
+#pragma link "RxLookup"
+#pragma resource "*.dfm"
+TPredmetsForm *PredmetsForm;
+
+__fastcall TPredmetsForm::TPredmetsForm(TComponent* Owner)
+        : TForm(Owner)
+{
+}
+
+
+void __fastcall TPredmetsForm::FormShow(TObject *Sender)
+{
+  Height = 330;
+  DBGridEh1->SetFocus();
+
+}
+
+void __fastcall TPredmetsForm::SaveClick(TObject *Sender)
+{
+  if (Trim(LNameE->Text) == "")
+  {
+    ShowMessage("Введіть повну назву дисципліни");
+    LNameE->SetFocus();
+    return;
+  }
+  if (Trim(SNameE->Text) == "")
+  {
+    ShowMessage("Введіть коротку назву дисципліни");
+    SNameE->SetFocus();
+    return;
+  }
+  if (Trim(TeacherE->Text) == "")
+  {
+    ShowMessage("Виберіть викладача");
+    TeacherE->SetFocus();
+    return;
+  }
+
+  if (MainDM->PredmetsDS->State == dsInsert || MainDM->PredmetsDS->State == dsEdit)
+    MainDM->PredmetsDS->Post();
+  Height = 330;
+  MainDM->PredmetsViewDS->ReopenLocate("SHORTNAME");
+}
+
+void __fastcall TPredmetsForm::ExitClick(TObject *Sender)
+{
+  Close();
+}
+
+void __fastcall TPredmetsForm::DeleteClick(TObject *Sender)
+{
+  MainDM->PredmetsViewDS->Delete();
+}
+
+void __fastcall TPredmetsForm::EditClick(TObject *Sender)
+{
+  MainDM->PredmetsViewDS->Edit();
+}
+
+void __fastcall TPredmetsForm::LNameEKeyDown(TObject *Sender, WORD &Key,
+      TShiftState Shift)
+{
+  if (Key == VK_RETURN) SNameE->SetFocus();
+}
+
+void __fastcall TPredmetsForm::SNameEKeyDown(TObject *Sender, WORD &Key,
+      TShiftState Shift)
+{
+  if (Key == VK_RETURN) TeacherE->SetFocus();
+}
+
+void __fastcall TPredmetsForm::TeacherEKeyDown(TObject *Sender, WORD &Key,
+      TShiftState Shift)
+{
+  if (Key == VK_RETURN) Save->OnClick(TeacherE);
+}
+
+void __fastcall TPredmetsForm::FormClose(TObject *Sender,
+      TCloseAction &Action)
+{
+  if (MainDM->PredmetsDS->State == dsEdit || MainDM->PredmetsDS->State == dsInsert)
+    MainDM->PredmetsDS->Cancel();
+
+}
+
+
+
+void __fastcall TPredmetsForm::AddClick(TObject *Sender)
+{
+         if (Height < 446)
+  {
+    Height = 446;
+	MainDM->PredmetsDS->Append();
+	LNameE->SetFocus();
+  }
+  else Height = 330;
+}
+//---------------------------------------------------------------------------
+
+

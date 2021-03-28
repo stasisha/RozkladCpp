@@ -1,0 +1,19 @@
+//---------------------------------------------------------------------------
+
+
+#pragma hdrstop
+
+#include "MainDataModule.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma classgroup "Vcl.Controls.TControl"
+#pragma resource "*.dfm"
+TDataModule9 *DataModule9;
+//---------------------------------------------------------------------------
+__fastcall TDataModule9::TDataModule9(TComponent* Owner)
+	: TDataModule(Owner)
+{
+}
+//---------------------------------------------------------------------------
+
+

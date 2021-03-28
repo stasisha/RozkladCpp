@@ -1,5 +1,5 @@
 object DataModule3: TDataModule3
   OldCreateOrder = False
-  Height = 150
-  Width = 215
+  Height = 265
+  Width = 468
 end

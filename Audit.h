@@ -4,15 +4,25 @@
 #define AuditH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Data.DB.hpp>
+#include <Vcl.DBCtrls.hpp>
+#include <Vcl.DBGrids.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Grids.hpp>
 //---------------------------------------------------------------------------
-class TDataModule5 : public TDataModule
+class TAuditForm : public TForm
 {
 __published:	// IDE-managed Components
+	TDBGrid *DBGrid1;
+	TDBNavigator *DBNavigator1;
 private:	// User declarations
 public:		// User declarations
-	__fastcall TDataModule5(TComponent* Owner);
+	__fastcall TAuditForm(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TDataModule5 *DataModule5;
+extern PACKAGE TAuditForm *AuditForm;
 //---------------------------------------------------------------------------
 #endif

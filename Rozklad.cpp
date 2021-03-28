@@ -1,17 +1,16 @@
 //---------------------------------------------------------------------------
 
-
+#include <vcl.h>
 #pragma hdrstop
 
 #include "Rozklad.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
-#pragma classgroup "Vcl.Controls.TControl"
 #pragma resource "*.dfm"
-TDataModule1 *DataModule1;
+TForm2 *Form2;
 //---------------------------------------------------------------------------
-__fastcall TDataModule1::TDataModule1(TComponent* Owner)
-	: TDataModule(Owner)
+__fastcall TForm2::TForm2(TComponent* Owner)
+	: TForm(Owner)
 {
 }
 //---------------------------------------------------------------------------

@@ -4,15 +4,19 @@
 #define AboutH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
 //---------------------------------------------------------------------------
-class TDataModule8 : public TDataModule
+class TAboutForm : public TForm
 {
 __published:	// IDE-managed Components
+	TStaticText *StaticText1;
 private:	// User declarations
 public:		// User declarations
-	__fastcall TDataModule8(TComponent* Owner);
+	__fastcall TAboutForm(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TDataModule8 *DataModule8;
+extern PACKAGE TAboutForm *AboutForm;
 //---------------------------------------------------------------------------
 #endif

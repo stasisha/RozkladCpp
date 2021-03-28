@@ -1,17 +1,20 @@
 //---------------------------------------------------------------------------
 
+#include <vcl.h>
 
 #pragma hdrstop
 
 #include "Group.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
-#pragma classgroup "Vcl.Controls.TControl"
 #pragma resource "*.dfm"
-TDataModule4 *DataModule4;
+TGroupForm *GroupForm;
 //---------------------------------------------------------------------------
-__fastcall TDataModule4::TDataModule4(TComponent* Owner)
-	: TDataModule(Owner)
+__fastcall TGroupForm::TGroupForm(TComponent* Owner)
+	: TForm(Owner)
 {
 }
 //---------------------------------------------------------------------------
+
+
+

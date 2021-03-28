@@ -4,15 +4,23 @@
 #define RozkladH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
+#include "MainDataModule.h"
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Data.DB.hpp>
+#include <Vcl.DBGrids.hpp>
+#include <Vcl.Grids.hpp>
 //---------------------------------------------------------------------------
-class TDataModule1 : public TDataModule
+class TForm2 : public TForm
 {
 __published:	// IDE-managed Components
+	TDBGrid *DBGrid1;
 private:	// User declarations
 public:		// User declarations
-	__fastcall TDataModule1(TComponent* Owner);
+	__fastcall TForm2(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TDataModule1 *DataModule1;
+extern PACKAGE TForm2 *Form2;
 //---------------------------------------------------------------------------
 #endif

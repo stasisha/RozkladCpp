@@ -1,5 +1,37 @@
-object DataModule6: TDataModule6
+object TeacherForm: TTeacherForm
+  Left = 0
+  Top = 0
+  Caption = #1042#1080#1082#1083#1072#1076#1072#1095#1110
+  ClientHeight = 182
+  ClientWidth = 520
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
   OldCreateOrder = False
-  Height = 150
-  Width = 215
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBNavigator1: TDBNavigator
+    Left = 8
+    Top = 143
+    Width = 240
+    Height = 25
+    DataSource = DataModule9.TeacherDS
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 8
+    Width = 489
+    Height = 129
+    DataSource = DataModule9.TeacherDS
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
 end

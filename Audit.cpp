@@ -1,17 +1,16 @@
 //---------------------------------------------------------------------------
 
-
+#include <vcl.h>
 #pragma hdrstop
-
+#include "MainDataModule.h"
 #include "Audit.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
-#pragma classgroup "Vcl.Controls.TControl"
 #pragma resource "*.dfm"
-TDataModule5 *DataModule5;
+TAuditForm *AuditForm;
 //---------------------------------------------------------------------------
-__fastcall TDataModule5::TDataModule5(TComponent* Owner)
-	: TDataModule(Owner)
+__fastcall TAuditForm::TAuditForm(TComponent* Owner)
+	: TForm(Owner)
 {
 }
 //---------------------------------------------------------------------------
